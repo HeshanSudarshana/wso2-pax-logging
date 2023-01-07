@@ -22,7 +22,7 @@ However usage of Logback _without_ SLF4J is very rare and won't be implemented i
 And the above two (with their specific configuration file syntax) are supported by (respectively):
 
 * pax-logging-log4j2 (log4J2)
-* pax-logging-logback (logoback)
+* pax-logging-logback (logback)
 
 `pax-logging-log4j1` was named `pax-logging-service` before version 2.0.0 and was removed completely in 2.1.0. However Log4j1 API was _not_ removed.
 
@@ -387,7 +387,7 @@ https://ops4j1.jira.com/browse/PAXLOGGING-251[PAXLOGGING-251] tracks this issue.
 
 == Log4j
 
-Ah, the grandfather of all configurable Logging frameworks. Created when there was no logging bridges/facades around. Actually first facades (Commons Logging) was created to bridge common logging API to one of different logging frameworks (back then, it was only Log4J1 and Java Util Logging (JUL) from JDK1.4).
+Ah, the grandfather of all configurable Logging frameworks. Created when there was no logging bridges/facades around. Actually first facade (Commons Logging) was created to bridge common logging API to one of different logging frameworks (back then, it was only Log4J1 and Java Util Logging (JUL) from JDK1.4).
 
 Because its origins are in pre-logging bridge times, Log4J1's API was used directly by very large amount of code. That's why pax-logging fully supports its native API. However in Pax Logging 1.12.x and 2.1.x I've removed the implementation (in particular the appenders) based on Log4J1.
 
